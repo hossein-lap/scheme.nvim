@@ -1,6 +1,6 @@
 M = {}
 
-function M:ColorThem(config)
+function M.ColorThem(config)
 	if config == nil then
 		config = {}
 	end

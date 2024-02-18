@@ -1,4 +1,6 @@
-function ColorThem(config)
+M = {}
+
+function M:ColorThem(config)
 	if config == nil then
 		config = {}
 	end
@@ -78,3 +80,5 @@ function ColorThem(config)
 		vim.api.nvim_set_hl(0, "StatusLineNC", {bg = '#777777', fg = '#121212'})
 	end
 end
+
+return M

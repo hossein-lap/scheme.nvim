@@ -5,7 +5,7 @@ function M.ColorThem(config)
 		config = {}
 	end
 
-	if not config.name then
+	if not config.name or config.name == "" then
 		config.name = "tokyodark"
 	end
 
@@ -59,7 +59,7 @@ function M.ColorThem(config)
 		vim.print(elements)
 	end
 
-	if not config.alpha_sec then
+	if not config.alpha_sec or config.alpha_sec == "" then
 		sections = elements.basic
 	else
 		sections = elements[config.alpha_sec]

@@ -56,7 +56,6 @@ function M.ColorThem(config)
 				'EndOfBuffer',
 			},
 		}
-		vim.print(elements)
 	end
 
 	if not config.alpha_sec or config.alpha_sec == "" then

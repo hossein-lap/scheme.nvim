@@ -6,7 +6,7 @@ function M.ColorThem(config)
 	end
 
 	if not config.name or config.name == "" then
-		config.name = "tokyodark"
+		config.name = "lupper"
 	end
 
 	local elements = {} -- store value for config.alpha_sec
@@ -19,13 +19,13 @@ function M.ColorThem(config)
 			all = {
 				'Normal',
 				'NormalFloat',
+				'EndOfBuffer',
 				'SignColumn',
 				'WhichKeyFloat',
 				'VertSplit',
 				'TabLineSel',
 				'FoldColumn',
 				'Folded',
-				'EndOfBuffer',
 				'LineNr',
 				'CursorLineNr',
 			},
@@ -33,11 +33,13 @@ function M.ColorThem(config)
 			basic = {
 				'Normal',
 				'NormalFloat',
+				'EndOfBuffer',
 			},
 
 			cols = {
 				'Normal',
 				'NormalFloat',
+				'EndOfBuffer',
 				'SignColumn',
 				'WhichKeyFloat',
 				'VertSplit',
@@ -47,13 +49,13 @@ function M.ColorThem(config)
 			folds = {
 				'Normal',
 				'NormalFloat',
+				'EndOfBuffer',
 				'SignColumn',
 				'WhichKeyFloat',
 				'VertSplit',
 				'TabLineSel',
 				'FoldColumn',
 				'Folded',
-				'EndOfBuffer',
 			},
 		}
 	end
@@ -65,7 +67,7 @@ function M.ColorThem(config)
 	end
 
 	local alpha_enable = config.alpha_enable or 1
-	local color = config.name or 'tokyodark'
+	local color = config.name or 'lupper'
 
 	vim.cmd.colorscheme(color)
 

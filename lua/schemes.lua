@@ -20,6 +20,7 @@ function M.ColorThem(config)
 				'Normal',
 				'NormalFloat',
 				'EndOfBuffer',
+				'PmenuSbar',
 				'SignColumn',
 				'WhichKeyFloat',
 				'VertSplit',
@@ -32,7 +33,6 @@ function M.ColorThem(config)
 
 			basic = {
 				'Normal',
-				'NormalFloat',
 				'EndOfBuffer',
 			},
 
